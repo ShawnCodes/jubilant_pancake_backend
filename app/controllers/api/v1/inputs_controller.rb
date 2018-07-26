@@ -29,3 +29,4 @@ class Api::V1::InputsController < ApplicationController
   def find_input
     params.require(:input).permit(:input1, :input2, :result)
   end
+end
