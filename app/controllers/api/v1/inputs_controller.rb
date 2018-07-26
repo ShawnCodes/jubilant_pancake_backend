@@ -16,7 +16,7 @@ class Api::V1::InputsController < ApplicationController
     if @input.save
       render json: @input
     else
-      render json: { errors: @input.errors.full_messages }, status: :unprocessible_entity
+      render json: { errors: @input.errors.full_messages }
     end
   end
 
