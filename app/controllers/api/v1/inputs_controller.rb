@@ -5,10 +5,16 @@ class Api::V1::InputsController < ApplicationController
     render json: @inputs
   end
 
+  def create
+@input = Input.new
+@input.input1 = params[:input1]
+@input.input2 = params[:input2]
+  end
+
   def update
     @input.update(input_params)
     if @input.save
-      render json: @input, status: :accepted
+      render json: @input
     else
       render json: { errors: @input.errors.full_messages }, status: :unprocessible_entity
     end
@@ -21,6 +27,5 @@ class Api::V1::InputsController < ApplicationController
   end
 
   def find_input
-    @input = Input.find(params[:id])
+    params.require(:input).permit(:input1, :input2, :result)
   end
-end

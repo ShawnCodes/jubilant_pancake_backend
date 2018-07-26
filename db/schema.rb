@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2018_07_26_030012) do
   create_table "inputs", force: :cascade do |t|
     t.string "input1"
     t.string "input2"
-    t.string "result"
-    t.string "integer"
+    t.integer "result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
