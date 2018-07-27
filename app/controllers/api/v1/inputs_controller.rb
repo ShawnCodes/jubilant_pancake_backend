@@ -10,7 +10,7 @@ class Api::V1::InputsController < ApplicationController
 @input.input1 = params[:input1]
 @input.input2 = params[:input2]
 if @input.save
-  @input.result = levenshtein(input1, input2)
+  @input.result = levenshtein(@input.input1, @input.input2)
   render json: @input
 end
   end
