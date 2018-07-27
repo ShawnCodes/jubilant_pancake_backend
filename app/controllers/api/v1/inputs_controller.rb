@@ -11,6 +11,7 @@ class Api::V1::InputsController < ApplicationController
 @input.input2 = params[:input2]
 if @input.save
   @input.result = levenshtein(input1, input2)
+  render json: @input
 end
   end
 
