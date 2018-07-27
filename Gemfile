@@ -42,7 +42,12 @@ end
 
 gem 'active_model_serializers'
 
+gem 'factory_girl_rails'
+gem 'shoulda-matchers'
+
 gem 'rspec'
+
+gem 'rspec-rails'
 
 gem 'rspec-expectations'
 

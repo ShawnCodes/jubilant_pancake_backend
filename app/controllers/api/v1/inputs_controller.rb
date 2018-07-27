@@ -9,6 +9,9 @@ class Api::V1::InputsController < ApplicationController
 @input = Input.new
 @input.input1 = params[:input1]
 @input.input2 = params[:input2]
+if @input.save
+  @input.result = levenshtein(input1, input2)
+end
   end
 
   def update
@@ -29,4 +32,6 @@ class Api::V1::InputsController < ApplicationController
   def find_input
     params.require(:input).permit(:input1, :input2, :result)
   end
+
+
 end
