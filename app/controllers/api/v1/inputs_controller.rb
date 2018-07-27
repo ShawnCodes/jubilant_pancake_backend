@@ -6,13 +6,13 @@ class Api::V1::InputsController < ApplicationController
   end
 
   def create
-@input = Input.new
-@input.input1 = params[:input1]
-@input.input2 = params[:input2]
-if @input.save
-  @input.result = levenshtein(@input.input1, @input.input2)
-  render json: @input
-end
+    @input = Input.new
+    @input.input1 = params[:input1]
+    @input.input2 = params[:input2]
+    if @input.save
+      @input.result = levenshtein(@input.input1, @input.input2)
+      render json: @input
+    end
   end
 
   def update

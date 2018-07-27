@@ -1,24 +1,24 @@
-# README
+**Assumptions**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Based on the instructions given, I've made the following assumptions:
 
-Things you may want to cover:
+The backend should include a method that measures the distance between two given strings, identified in my algorithm as (s) and (t). At the point of authentication, the data passed from my frontend should receive the two arguments, and complete the calculation. Once the calculation is complete, the computed output should be returned to the user in some form on the frontend.
 
-* Ruby version
 
-* System dependencies
+**API Endpoint Testing**
 
-* Configuration
+The testing for my API endpoints is done with Rspec and located in app > spec > requests > status_spec
+I completed testing for my get and post in the main endpoint with the expectation of a 200 return.
 
-* Database creation
 
-* Database initialization
+**Functional Testing**
 
-* How to run the test suite
+The functional testing was done with Rspec as well, and located in app > spec > methods_spec
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+**Installation**
 
-* ...
+Run: rails db:create && rails db:migrate
+
+
+rails s -p 3001
