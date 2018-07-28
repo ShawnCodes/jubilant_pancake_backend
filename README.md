@@ -17,7 +17,10 @@ The functional testing was done with Rspec as well, and located in app > spec > 
 
 **Demo**
 
-![Levenshtein] (https://github.com/ShawnCodes/jubilant_pancake_backend/blob/master/public/levenshtein_demo.gif)
+![Levenshtein](
+https://github.com/ShawnCodes/jubilant_pancake_backend/blob/master/public/levenshtein_demo.gif?raw=true
+)
+
 
 **Installation**
 
