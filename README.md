@@ -15,6 +15,9 @@ I completed testing for my get and post in the main endpoint with the expectatio
 
 The functional testing was done with Rspec as well, and located in app > spec > methods_spec
 
+**Demo**
+
+![Levenshtein] (https://github.com/ShawnCodes/jubilant_pancake_backend/blob/master/public/levenshtein_demo.gif)
 
 **Installation**
 
